@@ -1,0 +1,1 @@
+This repo contains the MEAN stack Application that is built during a coding session.
