@@ -14,6 +14,8 @@
 		{{review.name }} says
 	</strong>{{review.review}}</li>
 </ul>
+<div ng-if="vm.isLoggedIn()">
+	
 
 <form name="vm.reviewForm" ng-submit="vm.addReview()">
 	Your name: <input type="text" name="name" required ng-minlength="2" ng-model="vm.name">
@@ -34,7 +36,7 @@
 
 	<button type="submit" class="btn">Add review</button>
 </form>
-
+</div>
 
 
 

@@ -9,6 +9,7 @@ angular.module('meanhotel')
        	hotelDataFactory.hotelList().then(function(response){
        		console.log(response)
        		vm.hotels = response;
+                     
        	});
 
        }

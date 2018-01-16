@@ -15,7 +15,7 @@ function hotelRating() {
 		scope: {
 			stars: '@'
 		}
-	}
+	};
 }
 
 // angular.module('meanhotel').component('hotelRating', {

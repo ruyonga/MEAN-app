@@ -1,5 +1,5 @@
 <h1>{{vm.title}}</h1>
 
-<ul ng-if="vm.hotel >1">
+<ul >
 	<li ng-repeat="hotel in vm.hotels track by $index"><a ng-href="/#!/hotels/{{ hotel._id}}">{{hotel.name}}</a></li>
 </ul>

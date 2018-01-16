@@ -8,7 +8,7 @@ var crtlUsers = require('../controllers/users.controller.js')
 
 router
     .route('/hotels')
-	.get(crtlUsers.authenticate, ctrlHotels.hotelsGetAll)
+	.get(ctrlHotels.hotelsGetAll)
 	.post(ctrlHotels.hotelsAddOne);
 
 router
@@ -22,7 +22,7 @@ router
 router
     .route('/hotels/:hotelId/reviews')
     .get(ctrlReviews.reviewsGetAll)
-    .post(ctrlReviews.reviewsAddOne);
+    .post(crtlUsers.authenticate, ctrlReviews.reviewsAddOne);
 //Single Review
 router
     .route('/hotels/:hotelId/reviews/:reviewId')
