@@ -33,7 +33,8 @@ process.on('SIGTERM', function(){
 
 
 //Bring in the schemas and models
-require('./hotels.model.js');
+require('./hotels.model');
+require('./users.model');
 
 // process.on('SIGUSR2', function(){
 // 	mongoose.connection.close(function(){

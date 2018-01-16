@@ -10,7 +10,7 @@
               	hotelDataFactory.hotelDisplay(id).then(function(response){
               		console.log(response);
               		vm.hotel = response;
-                            vm.stars = _getStarRating(response.stars);
+                  vm.stars = _getStarRating(response.stars);
               	});
 
 

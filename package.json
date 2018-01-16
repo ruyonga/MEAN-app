@@ -18,9 +18,12 @@
   "license": "ISC",
   "dependencies": {
     "angular": "^1.6.8",
+    "angular-jwt": "^0.1.9",
     "angular-route": "^1.6.8",
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.0",
     "mongodb": "^3.0.1",
     "mongoose": "^4.13.9",
     "nodemon": "^1.14.11"

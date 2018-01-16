@@ -3,10 +3,12 @@ var router = express.Router();
 
 var ctrlHotels = require('../controllers/hotels.controllers.js');
 var ctrlReviews = require('../controllers/reviews.controllers.js');
+var crtlUsers = require('../controllers/users.controller.js')
+
 
 router
     .route('/hotels')
-	.get(ctrlHotels.hotelsGetAll)
+	.get(crtlUsers.authenticate, ctrlHotels.hotelsGetAll)
 	.post(ctrlHotels.hotelsAddOne);
 
 router
@@ -27,6 +29,16 @@ router
     .get(ctrlReviews.reviewsGetOne)
     .put(ctrlReviews.reviewsUpdateOne)
     .delete(ctrlReviews.reviewsDeleteOne);
+
+router
+    .route('/users/register')
+    .post(crtlUsers.register);
+
+router
+    .route('/users/login')
+    .post(crtlUsers.login);
+
+
 
 
 module.exports = router;
